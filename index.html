@@ -17,7 +17,8 @@
 	        }
       	});
       	myDataRef.on('child_added', function(snapshot) {
-      		//We'll fill this in later.
+      		var message = snapshot.val();
+      		displayChatMessage(message.name, message.text);
       	});
   	</script>
   </body>
